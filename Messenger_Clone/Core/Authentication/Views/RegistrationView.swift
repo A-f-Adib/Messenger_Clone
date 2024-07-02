@@ -12,9 +12,14 @@ struct RegistrationView: View {
     @State private var email = ""
     @State private var password = ""
     @State private var fullname = ""
+    @Environment(\.dismiss) var dismiss
     
     var body: some View {
+    
         VStack{
+            
+            Spacer()
+            
             Image("messenger")
                 .resizable()
                 .scaledToFit()
@@ -51,6 +56,22 @@ struct RegistrationView: View {
                     .frame(width: 360, height: 44)
                     .background(Color(.systemBlue))
                     .cornerRadius(10)
+            }
+            .padding(.vertical)
+            
+            Spacer()
+            Divider()
+            
+            Button {
+                dismiss()
+            } label: {
+                HStack(spacing: 3) {
+                    Text("Already have an account?")
+                    Text("Sign In")
+                        .fontWeight(.semibold)
+                    
+                }
+                .font(.footnote)
             }
             .padding(.vertical)
         }
