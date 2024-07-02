@@ -14,6 +14,7 @@
 		74E9D2C82C3451FC0044DD5D /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E9D2C72C3451FC0044DD5D /* LoginView.swift */; };
 		74E9D2CA2C348EC80044DD5D /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E9D2C92C348EC80044DD5D /* RegistrationView.swift */; };
 		74E9D2CD2C3494A00044DD5D /* InboxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E9D2CC2C3494A00044DD5D /* InboxView.swift */; };
+		74E9D2D02C34995D0044DD5D /* ActiveNowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E9D2CF2C34995D0044DD5D /* ActiveNowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		74E9D2C72C3451FC0044DD5D /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		74E9D2C92C348EC80044DD5D /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
 		74E9D2CC2C3494A00044DD5D /* InboxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxView.swift; sourceTree = "<group>"; };
+		74E9D2CF2C34995D0044DD5D /* ActiveNowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveNowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 		74E9D2C12C344FBE0044DD5D /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				74E9D2CE2C3499380044DD5D /* ActiveNow */,
 				74E9D2CB2C3494840044DD5D /* Inbox */,
 				74E9D2C52C34503D0044DD5D /* Authentication */,
 				74E9D2C42C3450340044DD5D /* Root */,
@@ -146,6 +149,14 @@
 				74E9D2CC2C3494A00044DD5D /* InboxView.swift */,
 			);
 			path = Inbox;
+			sourceTree = "<group>";
+		};
+		74E9D2CE2C3499380044DD5D /* ActiveNow */ = {
+			isa = PBXGroup;
+			children = (
+				74E9D2CF2C34995D0044DD5D /* ActiveNowView.swift */,
+			);
+			path = ActiveNow;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -221,6 +232,7 @@
 				74E9D2C82C3451FC0044DD5D /* LoginView.swift in Sources */,
 				74E9D2B32C344EA40044DD5D /* ContentView.swift in Sources */,
 				74E9D2CD2C3494A00044DD5D /* InboxView.swift in Sources */,
+				74E9D2D02C34995D0044DD5D /* ActiveNowView.swift in Sources */,
 				74E9D2B12C344EA40044DD5D /* Messenger_CloneApp.swift in Sources */,
 				74E9D2CA2C348EC80044DD5D /* RegistrationView.swift in Sources */,
 			);

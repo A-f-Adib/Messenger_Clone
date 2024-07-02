@@ -23,6 +23,17 @@ struct InboxView: View {
                             .fontWeight(.semibold)
                     }
                 }
+                
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button {
+                        
+                    } label : {
+                        Image(systemName: "square.and.pencil")
+                            .resizable()
+                            .frame(width: 32, height: 32)
+                            .foregroundStyle(.black, Color.gray)
+                    }
+                }
             }
         }
     }
