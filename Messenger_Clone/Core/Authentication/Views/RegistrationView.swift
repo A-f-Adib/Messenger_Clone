@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct RegistrationView: View {
+    
     @State private var email = ""
     @State private var password = ""
     @State private var fullname = ""
@@ -26,6 +27,12 @@ struct RegistrationView: View {
                     .background(Color(.systemGray6))
                     .cornerRadius(10)
                     .padding(.horizontal, 24)
+                TextField("Enter your full name" , text: $fullname)
+                    .font(.subheadline)
+                    .padding(12)
+                    .background(Color(.systemGray6))
+                    .cornerRadius(10)
+                    .padding(.horizontal, 24)
                 SecureField("Enter your password", text: $password)
                     .font(.subheadline)
                     .padding(12)
@@ -33,6 +40,19 @@ struct RegistrationView: View {
                     .cornerRadius(10)
                     .padding(.horizontal, 24)
             }
+            
+            Button {
+                print("Handle login")
+            } label: {
+                Text("Sign Up")
+                    .font(.subheadline)
+                    .fontWeight(.semibold)
+                    .foregroundColor(.white)
+                    .frame(width: 360, height: 44)
+                    .background(Color(.systemBlue))
+                    .cornerRadius(10)
+            }
+            .padding(.vertical)
         }
     }
 }
