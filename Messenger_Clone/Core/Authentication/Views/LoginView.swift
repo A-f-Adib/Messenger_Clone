@@ -23,6 +23,26 @@ struct LoginView: View {
                     TextField("Enter your mail" , text: $email)
                     SecureField("Enter your password", text: $password)
                 }
+                
+                Button {
+                    print("forgot password")
+                } label: {
+                    Text("Forgot password?")
+                        .font(.footnote)
+                        .fontWeight(.semibold)
+                        .padding(.top)
+                        .padding(.trailing, 28)
+                    
+                }
+                .frame(maxWidth: .infinity, alignment: .trailing)
+                
+                Button {
+                    print("Handle login")
+                } label: {
+                    Text("Login")
+                }
+
+
             }
         }
         
