@@ -19,9 +19,19 @@ struct LoginView: View {
                     .scaledToFit()
                     .frame(width: 150, height: 150)
                     .padding()
-                VStack{
+                VStack(spacing: 12){
                     TextField("Enter your mail" , text: $email)
+                        .font(.subheadline)
+                        .padding(12)
+                        .background(Color(.systemGray6))
+                        .cornerRadius(10)
+                        .padding(.horizontal, 24)
                     SecureField("Enter your password", text: $password)
+                        .font(.subheadline)
+                        .padding(12)
+                        .background(Color(.systemGray6))
+                        .cornerRadius(10)
+                        .padding(.horizontal, 24)
                 }
                 
                 Button {
@@ -40,7 +50,14 @@ struct LoginView: View {
                     print("Handle login")
                 } label: {
                     Text("Login")
+                        .font(.subheadline)
+                        .fontWeight(.semibold)
+                        .foregroundColor(.white)
+                        .frame(width: 360, height: 44)
+                        .background(Color(.systemBlue))
+                        .cornerRadius(10)
                 }
+                .padding(.vertical)
                 
                 HStack{
                     Rectangle()
@@ -66,11 +83,19 @@ struct LoginView: View {
                 
                 Spacer()
                 
+                Divider()
+                
                 NavigationLink {
-                    <#code#>
+                    Text("Sign up view")
                 } label: {
-                    <#code#>
+                    HStack{
+                        Text("Dont have an account?")
+                        Text("Sign up")
+                            .fontWeight(.semibold)
+                    }
+                    .font(.footnote)
                 }
+                .padding(.vertical)
 
 
             }
