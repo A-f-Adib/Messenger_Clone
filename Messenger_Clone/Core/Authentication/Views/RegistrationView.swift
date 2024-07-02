@@ -75,6 +75,7 @@ struct RegistrationView: View {
             }
             .padding(.vertical)
         }
+        
     }
 }
 
