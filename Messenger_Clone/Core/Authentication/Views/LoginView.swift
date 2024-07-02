@@ -52,6 +52,26 @@ struct LoginView: View {
                         .frame(width: (UIScreen.main.bounds.width / 2) - 40, height: 0.5)
                 }
                 .foregroundColor(.gray)
+                
+                HStack{
+                    Image("fb")
+                        .resizable()
+                        .frame(width: 20, height: 20)
+                    Text("Continue with facebook")
+                        .font(.footnote)
+                        .fontWeight(.semibold)
+                        .foregroundColor(Color(.systemBlue))
+                }
+                .padding(.top, 8)
+                
+                Spacer()
+                
+                NavigationLink {
+                    <#code#>
+                } label: {
+                    <#code#>
+                }
+
 
             }
         }
