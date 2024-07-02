@@ -41,7 +41,17 @@ struct LoginView: View {
                 } label: {
                     Text("Login")
                 }
-
+                
+                HStack{
+                    Rectangle()
+                        .frame(width: (UIScreen.main.bounds.width / 2) - 40, height: 0.5)
+                    Text("Or")
+                        .font(.footnote)
+                        .fontWeight(.semibold)
+                    Rectangle()
+                        .frame(width: (UIScreen.main.bounds.width / 2) - 40, height: 0.5)
+                }
+                .foregroundColor(.gray)
 
             }
         }
