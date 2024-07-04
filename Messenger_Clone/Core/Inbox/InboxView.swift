@@ -25,7 +25,7 @@ struct InboxView: View {
                 .frame(height: UIScreen.main.bounds.height - 120)
             }
             .fullScreenCover(isPresented: $showMessageView,  content: {
-                Text("New message")
+                NewMessageView()
             })
             .toolbar {
                 ToolbarItem(placement: .navigationBarLeading) {
