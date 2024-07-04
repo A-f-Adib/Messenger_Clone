@@ -6,18 +6,20 @@
 //
 
 import SwiftUI
+import PhotosUI
 
 struct ProfileView: View {
     var body: some View {
         VStack {
             //header
             VStack {
-                Image(systemName: "person.circle.fill")
+                Image("avatar")
                     .resizable()
-                    .frame(width: 80, height: 80)
-                    .foregroundColor(.gray)
+                    .scaledToFit()
+                    .frame(width: 100, height: 100)
+                    .clipShape(Circle())
                 
-                Text("Bruce Lee")
+                Text("A.f. Adib")
                     .font(.title2)
                     .fontWeight(.semibold)
             }
