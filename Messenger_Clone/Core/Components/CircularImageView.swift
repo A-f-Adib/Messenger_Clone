@@ -34,19 +34,22 @@ enum profileImageSize {
 }
 
 struct CircularImageView: View {
+    
     let user : User
+    let size : profileImageSize
+    
     var body: some View {
         if let imageURL = user.profileIamgeURL {
             Image(imageURL)
                 .resizable()
                 .scaledToFit()
-                .frame(width: 80, height: 80)
+                .frame(width: size.dimention, height: size.dimention)
                 .clipShape(Circle())
             
         } else {
             Image(systemName: "person.circle.fill")
                 .resizable()
-                .frame(width: 80, height: 80)
+                .frame(width: size.dimention, height: size.dimention)
                 .foregroundColor(.gray)
         }
     }
@@ -54,6 +57,6 @@ struct CircularImageView: View {
 
 struct CircularImageView_Previews: PreviewProvider {
     static var previews: some View {
-        CircularImageView(user: User.MOCK_USER)
+        CircularImageView(user: User.MOCK_USER, size: .medium)
     }
 }
