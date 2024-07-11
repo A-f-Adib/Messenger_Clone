@@ -42,7 +42,8 @@ struct CircularImageView: View {
         if let imageURL = user.profileIamgeURL {
             Image(imageURL)
                 .resizable()
-                .scaledToFit()
+//                .scaledToFit()
+                .scaledToFill()
                 .frame(width: size.dimention, height: size.dimention)
                 .clipShape(Circle())
             
@@ -57,6 +58,6 @@ struct CircularImageView: View {
 
 struct CircularImageView_Previews: PreviewProvider {
     static var previews: some View {
-        CircularImageView(user: User.MOCK_USER, size: .medium)
+        CircularImageView(user: User.MOCK_USER, size: .xLarge)
     }
 }

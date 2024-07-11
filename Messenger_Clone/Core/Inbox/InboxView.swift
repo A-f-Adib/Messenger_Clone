@@ -34,7 +34,7 @@ struct InboxView: View {
                         NavigationLink {
                             ProfileView()
                         } label: {
-                            Image(user.profileIamgeURL ?? "")
+                            Image("avatar")
                                 .resizable()
                                 .scaledToFit()
                                 .frame(width: 40, height: 40)
