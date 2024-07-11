@@ -13,6 +13,8 @@ struct ChatView: View {
     
     var body: some View {
         VStack {
+            //header
+            
             ScrollView {
                 VStack {
                     CircularImageView(user: User.MOCK_USER, size: .xLarge)
@@ -27,7 +29,15 @@ struct ChatView: View {
                             .foregroundColor(.gray)
                     }
                  }
+                //messages
+                
+                ForEach(0...15, id: \.self) { message in
+                    ChatMessageCell(isFromUser: Bool.random())
+                }
+                
             }
+            
+            //message input view
             
             Spacer()
             ZStack(alignment: .trailing) {
@@ -41,7 +51,7 @@ struct ChatView: View {
                 Button {
                     
                 } label : {
-                    Text("send")
+                    Text("Send")
                         .fontWeight(.semibold)
                 }
                 .padding(.horizontal)
