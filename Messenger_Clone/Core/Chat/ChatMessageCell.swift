@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+
 struct ChatMessageCell: View {
     
     let isFromUser : Bool
