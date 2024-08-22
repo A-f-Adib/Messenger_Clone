@@ -8,9 +8,17 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @StateObject var viewModel = contentViewModel()
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        Group {
+            if viewModel.userSession != nil {
+                InboxView()
+            } else {
+                LoginView()
+            }
+        }
     }
 }
 
