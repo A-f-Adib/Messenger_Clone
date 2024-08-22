@@ -29,4 +29,14 @@ class AuthService {
             print("DEBUG: Failed to create user with error: \(error.localizedDescription)")
         }
     }
+    
+    func singOut() {
+        do {
+            try Auth.auth().signOut() // signs out from back end
+            self.userSession = nil // updates routing logic
+            
+        } catch {
+            print("DEBUG: Failed to signOut with error \(error.localizedDescription)")
+        }
+    }
 }
