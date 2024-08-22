@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Firebase
 
 class AuthService {
     
@@ -14,6 +15,11 @@ class AuthService {
     }
     
     func createUser(withEmail email: String, password: String, fullName: String) async throws {
-        
+        do {
+            let result = try await Auth.auth().createUser(withEmail: email, password: password)
+            
+        } catch {
+            print("DEBUG: Failed to create user with error: \(error.localizedDescription)")
+        }
     }
 }
