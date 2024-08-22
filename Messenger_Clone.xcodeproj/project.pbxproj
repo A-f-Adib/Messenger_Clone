@@ -44,6 +44,7 @@
 		749289C62C3F6F27006EB0E7 /* CircularImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749289C52C3F6F27006EB0E7 /* CircularImageView.swift */; };
 		749DD1142C76CB5D002DC721 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749DD1132C76CB5D002DC721 /* ContentViewModel.swift */; };
 		749DD1162C76E5F3002DC721 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749DD1152C76E5F3002DC721 /* UserService.swift */; };
+		749DD11A2C76EAC3002DC721 /* InboxViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749DD1192C76EAC3002DC721 /* InboxViewModel.swift */; };
 		74E9D2B12C344EA40044DD5D /* Messenger_CloneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E9D2B02C344EA40044DD5D /* Messenger_CloneApp.swift */; };
 		74E9D2B32C344EA40044DD5D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E9D2B22C344EA40044DD5D /* ContentView.swift */; };
 		74E9D2B52C344EA90044DD5D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74E9D2B42C344EA90044DD5D /* Assets.xcassets */; };
@@ -70,6 +71,7 @@
 		749289C52C3F6F27006EB0E7 /* CircularImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularImageView.swift; sourceTree = "<group>"; };
 		749DD1132C76CB5D002DC721 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 		749DD1152C76E5F3002DC721 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		749DD1192C76EAC3002DC721 /* InboxViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxViewModel.swift; sourceTree = "<group>"; };
 		74E9D2AD2C344EA40044DD5D /* Messenger_Clone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Messenger_Clone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74E9D2B02C344EA40044DD5D /* Messenger_CloneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Messenger_CloneApp.swift; sourceTree = "<group>"; };
 		74E9D2B22C344EA40044DD5D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -201,6 +203,23 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		749DD1172C76EA62002DC721 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				74E9D2D12C34A0340044DD5D /* InboxRowView.swift */,
+				74E9D2CC2C3494A00044DD5D /* InboxView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		749DD1182C76EA6C002DC721 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				749DD1192C76EAC3002DC721 /* InboxViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		74E9D2A42C344EA30044DD5D = {
 			isa = PBXGroup;
 			children = (
@@ -316,8 +335,8 @@
 		74E9D2CB2C3494840044DD5D /* Inbox */ = {
 			isa = PBXGroup;
 			children = (
-				74E9D2CC2C3494A00044DD5D /* InboxView.swift */,
-				74E9D2D12C34A0340044DD5D /* InboxRowView.swift */,
+				749DD1182C76EA6C002DC721 /* ViewModel */,
+				749DD1172C76EA62002DC721 /* Views */,
 			);
 			path = Inbox;
 			sourceTree = "<group>";
@@ -441,6 +460,7 @@
 				7427A6D32C4008B00025C28C /* ChatMessageCell.swift in Sources */,
 				74E9D2B32C344EA40044DD5D /* ContentView.swift in Sources */,
 				7427A6D12C4002A40025C28C /* ChatView.swift in Sources */,
+				749DD11A2C76EAC3002DC721 /* InboxViewModel.swift in Sources */,
 				749DD1142C76CB5D002DC721 /* ContentViewModel.swift in Sources */,
 				7432EDB02C36EA4300BFA2BF /* SettingsViewModel.swift in Sources */,
 				74E9D2CD2C3494A00044DD5D /* InboxView.swift in Sources */,
